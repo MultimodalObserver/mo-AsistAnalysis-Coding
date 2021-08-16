@@ -593,13 +593,13 @@ public class LabelTextViewController implements Initializable {
         
         
         if (tableViewCod.getItems().isEmpty()){
-            if (!path.endsWith(".coded")){
-                    tableViewCoding.getItems().clear();//Elimina los elementos de la tabla secundaria cuando es .srt
-                    comboCodigo.getItems().clear();//Se elimina lo que tiene el combobox de codigos
-                    comboDeleteCode.getItems().clear();//Se elimina lo que tiene el combobox de eliminar codigos
-                    nameOfCode.clear();//Elimina de la lista los elementos que tenia
-                    colorOfCode.clear();//Elimina de la lista los elementos que tenia
-                    id_coding = 0;
+            if (!path.endsWith(".coded")){//Si es .srt
+                    //tableViewCoding.getItems().clear();//Elimina los elementos de la tabla secundaria cuando es .srt
+                    //comboCodigo.getItems().clear();//Se elimina lo que tiene el combobox de codigos
+                    //comboDeleteCode.getItems().clear();//Se elimina lo que tiene el combobox de eliminar codigos
+                    //nameOfCode.clear();//Elimina de la lista los elementos que tenia
+                    //colorOfCode.clear();//Elimina de la lista los elementos que tenia
+                    //id_coding = 0;
             }else{//Si es .coding
                 loadCodes(pathCodes);//Carga los codigos del archivo
                 loadTable(pathTable);
@@ -731,13 +731,13 @@ public class LabelTextViewController implements Initializable {
             Optional <ButtonType> action = alert.showAndWait();
             
             if(action.get()==ButtonType.OK){
-                if (!path.endsWith(".coded")){
-                    tableViewCoding.getItems().clear();//Elimina los elementos de la tabla secundaria cuando es .srt
-                    comboCodigo.getItems().clear();//Se elimina lo que tiene el combobox de codigos
-                    comboDeleteCode.getItems().clear();//Se elimina lo que tiene el combobox de eliminar codigos
-                    nameOfCode.clear();//Elimina de la lista los elementos que tenia
-                    colorOfCode.clear();//Elimina de la lista los elementos que tenia
-                    id_coding = 0;
+                if (!path.endsWith(".coded")){//Si es .srt
+                    //tableViewCoding.getItems().clear();//Elimina los elementos de la tabla secundaria cuando es .srt
+                    //comboCodigo.getItems().clear();//Se elimina lo que tiene el combobox de codigos
+                    //comboDeleteCode.getItems().clear();//Se elimina lo que tiene el combobox de eliminar codigos
+                    //nameOfCode.clear();//Elimina de la lista los elementos que tenia
+                    //colorOfCode.clear();//Elimina de la lista los elementos que tenia
+                    //id_coding = 0;
                 }else{//Si es .coding
                     loadCodes(pathCodes);//Carga los codigos del archivo
                     loadTable(pathTable);
@@ -1440,10 +1440,10 @@ public class LabelTextViewController implements Initializable {
     
     //Metodo que permite cargar los codigos existentes en archivos guardados con extension .codes
     private void loadCodes(String path) throws FileNotFoundException, IOException{
-        comboCodigo.getItems().clear();//Se elimina lo que tiene el combobox de codigos
-        comboDeleteCode.getItems().clear();//Se elimina lo que tiene el combobox de eliminar codigos
-        nameOfCode.clear();//Elimina de la lista los elementos que tenia
-        colorOfCode.clear();//Elimina de la lista los elementos que tenia
+        //comboCodigo.getItems().clear();//Se elimina lo que tiene el combobox de codigos
+        //comboDeleteCode.getItems().clear();//Se elimina lo que tiene el combobox de eliminar codigos
+        //nameOfCode.clear();//Elimina de la lista los elementos que tenia
+        //colorOfCode.clear();//Elimina de la lista los elementos que tenia
         
         
         
@@ -1536,7 +1536,7 @@ public class LabelTextViewController implements Initializable {
         }  
         else{
             System.out.println("no vacio");
-            tableViewCoding.getItems().clear();//Elimina los elementos de la tabla
+            //tableViewCoding.getItems().clear();//Elimina los elementos de la tabla
             idColumn.setCellValueFactory(new PropertyValueFactory <Coding, Integer>("id"));
             idSubColumn.setCellValueFactory(new PropertyValueFactory <Coding, Integer>("id_subtitle"));
             nameCodeColumn.setCellValueFactory(new PropertyValueFactory <Coding, String>("nombre"));

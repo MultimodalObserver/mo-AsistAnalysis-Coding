@@ -10,7 +10,7 @@
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
     <jar href="lib\i18n-1.1.2-SNAPSHOT.jar" size="5097" download="eager" />
     <jar href="lib\multimodal-observer-0.0.1.jar" size="18439276" download="eager" />
-    <jar href="mo-AsistAnalysis-Coding.jar" size="38781" download="eager" />
+    <jar href="mo-AsistAnalysis-Coding.jar" size="38711" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="controller.Main"  name="mo-AsistAnalysis-Coding" />
   <update check="always"/>
